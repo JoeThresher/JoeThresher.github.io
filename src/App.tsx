@@ -3,12 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./index.css";
 import Hero from "./components/hero.tsx";
+import Headerbar from "./components/headerbar.tsx";
 
 export default function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Headerbar />
       <Hero />
       <div>
         <a href="https://vite.dev" target="_blank">
