@@ -3,44 +3,63 @@ import "../index.css";
 export default function Hero() {
   return (
     <>
-      <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
-        <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
-          <div className="text-left">
-            <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-              Hero
-              <span className="font-bold text-blue-500">Section</span>
-              <span className="text-xl font-semibold rounded-full text-blueGray-500">
-                2.0
-              </span>
-            </h2>
-            <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              vulputate dignissim augue, Nullam vulputate dignissim augue.
-            </p>
-            <div className="mt-5 sm:flex md:mt-8">
-              <div className="rounded-md shadow">
-                <a
-                  href=""
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
-                >
-                  Getting started
-                </a>
-              </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <a
-                  href=""
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
-                >
-                  Contribute
-                </a>
+      <div>
+        <div className="flex h-screen items-center justify-center bg-gray-900 p-5">
+          <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
+            <div>
+              <h1 className="mb-2 text-3xl font-bold text-white">
+                <span className="text-green-500">Hi,</span> I'm Full Stack
+                Developer
+              </h1>
+              <p className="mb-6 text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                excepturi magnam enim officiis facilis numquam corporis quos
+                accusantium tempora, dolores quod cum facere architecto soluta
+                atque corrupti a alias perferendis.
+              </p>
+              <div className="flex justify-center space-x-5">
+                <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
+                  Follow
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                </button>
+                <button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-white p-5 py-3 font-semibold">
+                  Resume
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
-          <div className="relative w-full p-3 rounded  md:p-8">
-            <div className="rounded-lg bg-white text-black w-full">
-              <img src="https://picsum.photos/400/300" />
+            <div>
+              <img
+                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt=""
+                className="md:size-96 size-72 rounded-full "
+              />
             </div>
           </div>
         </div>
