@@ -2,8 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./index.css";
-import Hero from "./components/hero.tsx";
-import Headerbar from "./components/headerbar.tsx";
+import Hero from "./components/hero/hero.tsx";
+import Headerbar from "./components/headerbar/headerbar.tsx";
 
 export default function App() {
   const [count, setCount] = useState(0);
