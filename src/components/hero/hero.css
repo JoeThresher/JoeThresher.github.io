@@ -1,0 +1,17 @@
+@import url(src/style.css);
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  padding: min(6rem, 8rem);
+  width: min(800px, 1000px);
+}
+
+.hero-image {
+  width: min(600px, 1000px);
+}

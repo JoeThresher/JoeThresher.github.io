@@ -1,0 +1,6 @@
+@import url(src/style.css);
+
+header {
+  position: sticky;
+  top: 0;
+}

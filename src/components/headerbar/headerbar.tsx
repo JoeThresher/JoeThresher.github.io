@@ -1,4 +1,4 @@
-import "../../style.css";
+import "./headerbar.css";
 
 export default function Headerbar() {
   return (
