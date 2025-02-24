@@ -1,6 +1,5 @@
-@import url(src/style.css);
-
-header {
+.headerbar {
   position: sticky;
   top: 0;
+  backdrop-filter: blur(1rem);
 }
