@@ -3,13 +3,22 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 4rem;
 }
 
 .hero-text {
-  padding: min(6rem, 8rem);
-  width: min(800px, 1000px);
+  box-sizing: border-box;
+  /* padding: min(4rem, 6rem); */
+  width: min(600px, 1000px);
 }
 
 .hero-image {
-  width: min(600px, 1000px);
+  box-sizing: border-box;
+  /* padding: min(4rem, 6rem); */
+  width: min(500px, 800px);
+}
+
+.main-image {
+  border-radius: 50%;
 }
