@@ -3,55 +3,42 @@ import "./headerbar.css";
 export default function Headerbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-md navbar-light">
-        <div className="container-xxl">
-          <a href="#intro" className="navbar-brand">
-            <span className="fw-bold text-secondary">
-              <i className="bi bi-book-half" />
-              Net Ninja Pro - The Book
-            </span>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Navbar
           </a>
-          {/* Toggle button for mobile nav */}
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#main-nav"
-            aria-controls="main-nav"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon" />
           </button>
-          {/* navbar links */}
-          <div
-            className="collapse navbar-collapse justify-content-end align-center"
-            id="main-nav"
-          >
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#topics">
-                  About The Book
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#reviews">
-                  Reviews
+                <a className="nav-link" href="#">
+                  Features
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
-                  Get in Touch
-                </a>
-              </li>
-              <li className="nav-item d-md-none">
-                <a className="nav-link" href="#pricing">
+                <a className="nav-link" href="#">
                   Pricing
                 </a>
               </li>
-              <li className="nav-item ms-2 d-none d-md-inline">
-                <a className="btn btn-secondary" href="#pricing">
-                  buy now
+              <li className="nav-item">
+                <a className="nav-link disabled" aria-disabled="true">
+                  Disabled
                 </a>
               </li>
             </ul>

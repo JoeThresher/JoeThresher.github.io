@@ -3,27 +3,30 @@ import "./hero.css";
 export default function Hero() {
   return (
     <>
-      <div className="container hero-container">
-        <div className="hero-text">
-          <h1>Joe Thresher</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+      <section id="hero">
+        <div className="container-lg">
+          <div className="row justify-content-center align-items-center">
+            {/* Text column */}
+            <div className="col-md-5 text-center text-md-start">
+              <h1>Joe Thresher</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                minima pariatur beatae impedit. Quas, aperiam explicabo numquam
+                maiores doloremque quia dicta tenetur fugiat mollitia obcaecati
+                impedit ducimus qui aliquam perferendis?
+              </p>
+            </div>
+            {/* Picture column */}
+            <div className="col-md-5 text-center d-md-block">
+              <img
+                src="https://images.unsplash.com/photo-1739382120665-fa6bcf8b7833?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D"
+                className="img-fluid"
+                alt="placeholder image"
+              />
+            </div>
+          </div>
         </div>
-        <div className="hero-image">
-          <img
-            className="main-image"
-            src="https://images.unsplash.com/photo-1737074434060-79006cc1df11?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="placeholder photo"
-          />
-        </div>
-      </div>
+      </section>
     </>
   );
 }
