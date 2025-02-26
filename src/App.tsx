@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./style.css";
 import Hero from "./components/hero/hero.tsx";
 import Headerbar from "./components/headerbar/headerbar.tsx";
+import About from "./components/about/about.tsx";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ export default function App() {
     <>
       <Headerbar />
       <Hero />
+      <About></About>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

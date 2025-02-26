@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <section id="hero">
         <div className="container-lg">
-          <div className="row justify-content-center align-items-center">
+          <div className="row justify-content-evenly align-items-center">
             {/* Text column */}
             <div className="col-md-5 text-center text-md-start">
               <h1>Joe Thresher</h1>
@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="col-md-5 text-center d-md-block">
               <img
                 src="https://images.unsplash.com/photo-1739382120665-fa6bcf8b7833?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D"
-                className="img-fluid"
+                className="img-fluid rounded-circle"
                 alt="placeholder image"
               />
             </div>
